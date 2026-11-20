@@ -25,9 +25,35 @@
         </script>
       <script type="module" crossorigin src="/assets/index-CRkklM-v.js"></script>
       <link rel="stylesheet" crossorigin href="/assets/index-BSjJYEf5.css">
+        <style>
+            /* 网站底部备案号：固定悬浮条，深色/浅色主题都可读 */
+            #icp-footer {
+                position: fixed;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 8px;
+                z-index: 9999;
+                font-size: 12px;
+                line-height: 1.6;
+                padding: 2px 12px;
+                border-radius: 999px;
+                background: rgba(127, 127, 127, 0.16);
+                backdrop-filter: blur(6px);
+                -webkit-backdrop-filter: blur(6px);
+                white-space: nowrap;
+            }
+            #icp-footer a {
+                color: #666;
+                text-decoration: none;
+            }
+            .dark #icp-footer a {
+                color: #aaa;
+            }
+        </style>
     </head>
     <body class="bg-background text-foreground antialiased">
         <div id="root"></div>
+        <footer id="icp-footer"><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">浙ICP备2024114861号-2</a></footer>
         <script src="/config.js"></script>
     </body>
 </html>
